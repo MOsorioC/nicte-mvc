@@ -25,10 +25,17 @@ class DBSingleton{
 		}
 	}
 
+    /**
+     * quita la instancia en el caso de algun  fallo
+     */
 	public function unsetSingleton(){
         self::$instance == null;
     }
 
+    /**
+     * regresa la conexion a la BD
+     * @return mixed
+     */
 	public function getConnection(){
 		return $this->connection;
 	}

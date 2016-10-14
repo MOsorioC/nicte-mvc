@@ -8,7 +8,8 @@
  */
 class HomeController extends Controller {
 
-	public function index($values) {
+	//pagina principalgit
+    public function index($values) {
 		return $this->view("home/index");
 	}
 
